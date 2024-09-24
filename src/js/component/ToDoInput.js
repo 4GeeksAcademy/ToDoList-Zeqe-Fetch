@@ -16,7 +16,7 @@ function ToDoInput({ addTask }) {
       placeholder="Añadir nueva tarea"
       value={newTask}
       onChange={(e) => setNewTask(e.target.value)}
-      onKeyPress={handleKeyPress}
+      onKeyDown={handleKeyPress}
     />
   );
 }

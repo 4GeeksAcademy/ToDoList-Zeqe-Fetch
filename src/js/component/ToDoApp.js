@@ -23,7 +23,8 @@ function ToDoApp() {
         <p>No hay tareas, añadir tareas</p>
       ) : (
         <ToDoList tasks={tasks} deleteTask={deleteTask} />
-      )}
+      )} <br></br>
+      <p className="text-start">{tasks.length}  item left</p>
     </div>
   );
 }
