@@ -9,5 +9,6 @@ import "../styles/index.css";
 import ToDoApp from "./component/ToDoApp";
 
 //render your react application
+
 ReactDOM.createRoot(document.getElementById('app')).render(<ToDoApp/>);
 

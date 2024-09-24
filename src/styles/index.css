@@ -1,4 +1,4 @@
-/* Estilos globales */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -49,14 +49,14 @@ body {
   button {
     background-color: transparent;
     border: none;
-    color: red;
+    color: black;
     font-size: 16px;
     cursor: pointer;
-    visibility: hidden; /* Oculto por defecto */
+    visibility: hidden; 
   }
   
   li:hover button {
-    visibility: visible; /* Se muestra en hover */
+    visibility: visible;
   }
   
   p {
