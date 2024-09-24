@@ -21,7 +21,7 @@ function ToDoApp() {
       <div className="todo-app">  
         <ToDoInput addTask={addTask} />
         {tasks.length === 0 ? (
-          <p>No hay tareas, añadir tareas</p>
+          <p>No hay tareas, añadir una nueva tarea</p>
         ) : (
           <ToDoList tasks={tasks} deleteTask={deleteTask} />
         )}
