@@ -8,15 +8,52 @@ body {
     height: 100vh;
     margin: 0;
   }
-  
-  .todo-app {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
+
+  .todo-container {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
   }
   
+  
+  .todo-app {
+    position: relative; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+  }
+  
+  .todo-app::before,
+  .todo-app::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    z-index: -1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .todo-app::before {
+    top: 20px;
+    left: 20px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  .task-count {
+    font-size: 12px; 
+    color: #6c757d;  
+  }
+
   input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -38,9 +75,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
     transition: background-color 0.3s ease;
   }
+
+  ul li {
+    color: #6c757d; 
+    font-size: 18px;
+  }
+  
   
   li:hover {
     background-color: #f0f0f0;
@@ -62,5 +104,11 @@ body {
   p {
     text-align: center;
     color: #888;
+  }
+
+  h1 {
+    font-size: 36px;  
+    color: #6c757d;   
+    margin-bottom: 20px;
   }
   

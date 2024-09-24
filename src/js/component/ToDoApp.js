@@ -17,18 +17,20 @@ function ToDoApp() {
 
   return (
     <div className="todo-container">
-      <h1 className="text-center">Todo App</h1>
-      <div className="todo-app">
+      <h1 className="text-center">Todo App</h1> 
+      <div className="todo-app">  
         <ToDoInput addTask={addTask} />
         {tasks.length === 0 ? (
           <p>No hay tareas, añadir tareas</p>
         ) : (
           <ToDoList tasks={tasks} deleteTask={deleteTask} />
-        )} <br></br>
+        )}
+        <br />
         <p className="text-start">{tasks.length}  item left</p>
       </div>
     </div>
   );
+  
 }
 
 export default ToDoApp;
