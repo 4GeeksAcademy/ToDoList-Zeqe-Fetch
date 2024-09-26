@@ -6,7 +6,7 @@ function ToDoInput({ addTask }) {
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       addTask(newTask);
-      setNewTask("");
+      setNewTask();
     }
   };
 
